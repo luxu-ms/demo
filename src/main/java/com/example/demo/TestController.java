@@ -15,13 +15,13 @@ public class TestController {
 
     @GetMapping("hello")
     public String hello(){
-        return "Hello VS Code !!!";
+        return "Hello Spring Native!";
     }
 
     @GetMapping("hellodb")
     public String hellodb(){
         long startTime = System.currentTimeMillis();
-        String userName = userRepository.findById(1).get().getName();
+        String userName = userRepository.findById(1L).get().getName();
         long endTime = System.currentTimeMillis();
 
         return String.format("Hello %s, %d ms", userName, endTime-startTime);
