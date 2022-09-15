@@ -15,7 +15,7 @@ public class TestController {
 
     @GetMapping("hello")
     public String hello(){
-        return "Hello VS Code !!!";
+        return "Hello Spring Boot!";
     }
 
     @GetMapping("hellodb")
